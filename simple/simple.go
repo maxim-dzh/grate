@@ -8,7 +8,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/pbnjay/grate"
+	"github.com/maxim-dzh/grate"
 )
 
 // represents a set of data collections.

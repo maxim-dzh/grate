@@ -5,7 +5,7 @@ import (
 	"log"
 	"time"
 
-	"github.com/pbnjay/grate"
+	"github.com/maxim-dzh/grate"
 )
 
 // Sheet holds raw and rendered values for a spreadsheet.

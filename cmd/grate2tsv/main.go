@@ -25,10 +25,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/pbnjay/grate"
-	_ "github.com/pbnjay/grate/simple"
-	_ "github.com/pbnjay/grate/xls"
-	_ "github.com/pbnjay/grate/xlsx"
+	"github.com/maxim-dzh/grate"
+	_ "github.com/maxim-dzh/grate/simple"
+	_ "github.com/maxim-dzh/grate/xls"
+	_ "github.com/maxim-dzh/grate/xlsx"
 )
 
 var (

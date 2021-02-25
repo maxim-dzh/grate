@@ -1,3 +1,3 @@
-module github.com/pbnjay/grate
+module github.com/maxim-dzh/grate
 
-go 1.16
+go 1.15
