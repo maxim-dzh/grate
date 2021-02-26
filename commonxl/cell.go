@@ -157,13 +157,17 @@ func NewCellWithType(value interface{}, t CellType, f *Formatter) Cell {
 	}
 	if c[1] == StringCell {
 		if t == IntegerCell {
-			x, _ := strconv.ParseInt(c[0].(string), 10, 64)
-			c[0] = x
-			c[1] = IntegerCell
+			x, err := strconv.ParseInt(c[0].(string), 10, 64)
+			if err == nil {
+				c[0] = x
+				c[1] = IntegerCell
+			}
 		} else if t == FloatCell {
-			x, _ := strconv.ParseFloat(c[0].(string), 64)
-			c[0] = x
-			c[1] = FloatCell
+			x, err := strconv.ParseFloat(c[0].(string), 64)
+			if err == nil {
+				c[0] = x
+				c[1] = FloatCell
+			}
 		} else if t == BooleanCell {
 			c[0] = boolStrings[c[0].(string)]
 			c[1] = BooleanCell
